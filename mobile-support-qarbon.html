@@ -261,7 +261,7 @@
                           I agree to be contacted about this inquiry.
                         </label>
                       </div>
-                      <button type="submit" class="btn btn-qarbon">Send message</button>
+                      <button type="submit" class="btn btn-qarbon">Submit Ticket</button>
                     </div>
                   </div>
                   <div id="errorPanel" class="alert alert-danger mt-3 mb-0 d-none" role="alert"></div>
@@ -270,7 +270,7 @@
                 <div id="successPanel" class="success-panel text-center py-5">
                   <div class="mb-2" style="color:#FF7006; letter-spacing:.16em; font-size:.75rem; font-weight:700;">RECEIVED</div>
                   <h3 class="h4 mb-2">Thanks — your message is in flight.</h3>
-                  <p class="text-secondary mb-0">WeThis demo form stays on-page and does not send email. Hook the submit handler to your backend or Power Automate flow when ready.#8217;ve received your message and will route it to the right team.</p>
+                  <p class="text-secondary mb-0">Ticket Submitted.  Please check your email inbox for for updates.</p>
                 </div>
               </div>
             </div>
@@ -283,7 +283,7 @@
   <footer class="container pb-4">
     <div class="d-flex justify-content-between flex-wrap gap-2">
       <div>© 2026 Qarbon Aerospace.  Mobile SupportQ</div>
-      <div>Build 260911b4</div>
+      <div>Build 260911c4</div>
     </div>
   </footer>
 
@@ -330,7 +330,7 @@
         location: data.location || 'general',
         message: data.message || '',
         consent: document.getElementById('consent').checked,
-        website: data.website || '',           // honeypot — server rejects if non-empty
+        website: data.website || '', 
         submittedAt: new Date().toISOString(),
         pageUrl: window.location.href
       };
@@ -338,23 +338,38 @@
       submitBtn.disabled = true;
       submitBtn.textContent = 'Sending…';
 
+      // ---------------------------------------------------------------
+      // MODE SWITCH
+      //   'no-cors'  = fire-and-forget. Request reaches the flow, but the
+      //                response is OPAQUE: res.ok is ALWAYS false and
+      //                res.status is ALWAYS 0. You cannot detect failure.
+      //   'cors'     = real mode. Requires the flow's Response action to
+      //                return Access-Control-Allow-Origin matching this page.
+      // Verify with curl first (see runbook Phase 2), then flip to 'cors'.
+      // ---------------------------------------------------------------
+      const FETCH_MODE = 'no-cors';
+
       try {
         const res = await fetch(ENDPOINT, {
           method: 'POST',
-          // headers: { 'Content-Type': 'application/json' },
-          // mode: 'no-cors',
-          mode: 'no-cors',
+          mode: FETCH_MODE,
+          // text/plain keeps this a CORS "simple request" -> no preflight OPTIONS.
+          // Body is still JSON; the flow parses it with json(triggerBody()).
           headers: { 'Content-Type': 'text/plain;charset=UTF-8' },
           body: JSON.stringify(payload)
         });
 
-        if (!res.ok) throw new Error('Request failed with status ' + res.status);
+        // In no-cors the response is opaque (res.type === 'opaque', status 0).
+        // Checking res.ok there would ALWAYS throw, so only check in cors mode.
+        if (FETCH_MODE !== 'no-cors' && !res.ok) {
+          throw new Error('Request failed with status ' + res.status);
+        }
 
         form.style.display = 'none';
         success.style.display = 'block';
       } catch (err) {
         console.error(err);
-        showError('Sorry — we could not send your message. Please email Contact.Us@QarbonAerospace.com or call 1-855-572-7266');
+        showError('Sorry \u2014 we could not send your message. Please email Contact.Us@QarbonAerospace.com or call 1-855-572-7266');
         submitBtn.disabled = false;
         submitBtn.textContent = originalBtnText;
       }
