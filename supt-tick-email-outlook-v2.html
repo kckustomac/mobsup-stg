@@ -1,380 +1,296 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Contact Us | Qarbon Aerospace</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-
-
-<style>
-    :root {
-      --navy-deep: #000C28;
-      --navy: #102752;
-      --navy-mid: #1F417E;
-      --blue: #004A8A;
-      --blue-soft: #476DB3;
-      --blue-light: #6C8CCD;
-      --sky: #C7DFF8;
-      --gray: #C7C7C7;
-      --gray-mid: #9DA6A8;
-      --stone: #DDD5CA;
-      --offwhite: #F0F0F0;
-      --ink: #2F2F2F;
-      --orange: #FF900D;
-      --orange-bright: #FF7006;
-      --orange-warm: #F79E46;
-    }
-
-    * { box-sizing: border-box; }
-
-    body {
-      font-family: 'BrandFont', Inter, system-ui, -apple-system, Segoe UI, sans-serif;
-      background:
-        radial-gradient(1200px 500px at 80% -10%, rgba(71, 109, 179, 0.35), transparent 55%),
-        linear-gradient(180deg, var(--navy-deep) 0%, var(--navy) 48%, #0b1a38 100%);
-      color: #fff;
-      min-height: 100vh;
-    }
-
-    
-    h1, strong, b {
-      font-weight: 700; 
-    }
-
-    input, button, textarea, select {
-      font-family: inherit;
-    }
-
-     .lead-text {
-      font-weight: 400;
-    }
-    
-    .accent-heading {
-      font-weight: 700;
-    }
-    .navbar {
-      background: rgba(0, 12, 40, 0.72);
-      backdrop-filter: blur(10px);
-      border-bottom: 1px solid rgba(199, 223, 248, 0.12);
-    }
-
-    .brand-mark {
-      letter-spacing: 0.28em;
-      font-weight: 700;
-      font-size: 0.95rem;
-      color: #fff;
-    }
-
-    .brand-mark span {
-      color: var(--orange);
-    }
-
-    .hero-kicker {
-      color: var(--orange);
-      letter-spacing: 0.22em;
-      font-size: 0.72rem;
-      font-weight: 600;
-      text-transform: uppercase;
-    }
-
-    .contact-card {
-      background: #fff;
-      color: var(--ink);
-      border: 0;
-      border-radius: 18px;
-      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.28);
-      overflow: hidden;
-    }
-
-    .contact-aside {
-      background:
-        linear-gradient(165deg, var(--navy-mid) 0%, var(--navy-deep) 100%);
-      color: #fff;
-      min-height: 100%;
-    }
-
-    .aside-rule {
-      width: 48px;
-      height: 3px;
-      background: var(--orange);
-      border: 0;
-      opacity: 1;
-    }
-
-    .form-label {
-      font-size: 0.8rem;
-      font-weight: 600;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
-      color: var(--navy);
-    }
-
-    .form-control, .form-select {
-      border: 1px solid #d5dde8;
-      border-radius: 10px;
-      padding: 0.7rem 0.9rem;
-      background: #f7f9fc;
-    }
-
-    .form-control:focus, .form-select:focus {
-      border-color: var(--blue-soft);
-      box-shadow: 0 0 0 0.2rem rgba(71, 109, 179, 0.18);
-      background: #fff;
-    }
-
-    .btn-qarbon {
-      background: linear-gradient(180deg, var(--orange) 0%, var(--orange-bright) 100%);
-      border: 0;
-      color: #1a1208;
-      font-weight: 700;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-      border-radius: 10px;
-      padding: 0.85rem 1.2rem;
-    }
-
-    .btn-qarbon:hover {
-      background: linear-gradient(180deg, #ff9e2a 0%, #e86400 100%);
-      color: #1a1208;
-    }
-
-    .chip {
-      display: inline-block;
-      background: rgba(199, 223, 248, 0.12);
-      border: 1px solid rgba(199, 223, 248, 0.18);
-      color: var(--sky);
-      border-radius: 999px;
-      padding: 0.25rem 0.7rem;
-      font-size: 0.75rem;
-    }
-
-    .success-panel {
-      display: none;
-    }
-
-    footer {
-      color: var(--gray-mid);
-      font-size: 0.8rem;
-    }
-  </style>
+ <meta charset="UTF-8" />
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <meta name="format-detection" content="telephone=no" />
+ <meta name="x-apple-disable-message-reformatting" />
+ <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+ <title>Support-Q</title>
+ <!--[if gte mso 9]>
+ <xml>
+   <o:OfficeDocumentSettings>
+     <o:AllowPNG/>
+     <o:PixelsPerInch>96</o:PixelsPerInch>
+   </o:OfficeDocumentSettings>
+ </xml>
+ <![endif]-->
+ <style>
+ html, body {
+     margin: 0 !important;
+     padding: 0 !important;
+     min-height: 100% !important;
+     width: 100% !important;
+     -webkit-font-smoothing: antialiased;
+     background-color: #000C28 !important;
+ }
+ * { -ms-text-size-adjust: 100%; }
+ table, td, th {
+     mso-table-lspace: 0 !important;
+     mso-table-rspace: 0 !important;
+     border-collapse: collapse;
+ }
+ img { border: 0; outline: none; line-height: 100%; text-decoration: none; }
+ a[x-apple-data-detectors] { color: inherit !important; text-decoration: none !important; }
+ /* Outlook/Word ignores CSS gradients and most class-only backgrounds.
+    Layered fallbacks: solid #D8D4C6 -> CSS gradient -> optional embedded PNG. */
+ .ticket-container {
+     background-color: #D8D4C6;
+     background-image: linear-gradient(180deg, #CFE0F2 0%, #E8D5C1 100%);
+     /* Optional: paste a data:image/png;base64,... vertical gradient (860x1200, #CFE0F2 -> #E8D5C1)
+        background-image: url('REPLACE_ME__GRADIENT_BG_DATA_URI__REPLACE_ME'); */
+     border-radius: 0px;
+     box-shadow: 0 15px 35px rgba(0,0,0,0.4), 0 5px 15px rgba(0,0,0,0.2);
+     border-top: 8px solid #3F8DCC;
+     overflow: hidden;
+ }
+ .ticket-inner {
+     background-color: #D8D4C6;
+     background-image: linear-gradient(180deg, #CFE0F2 0%, #E8D5C1 100%);
+ }
+ .grid-label {
+     border-right: 2px dashed #94A3B8;
+     border-bottom: 2px dashed #94A3B8;
+ }
+ .grid-value {
+     border-bottom: 2px dashed #94A3B8;
+ }
+ .grid-row-last .grid-label,
+ .grid-row-last .grid-value {
+     border-bottom: none;
+ }
+ </style>
 </head>
-<body>
-  <nav class="navbar navbar-dark py-3">
-    <div class="container">
-      <div class="brand-mark">QARBON <span>AEROSPACE</span></div>
-      <div class="d-none d-md-block small text-white-50">Quality Assured in Every Fiber</div>
-    </div>
-  </nav>
 
-  <main class="container py-5">
-    <div class="row justify-content-center mb-4">
-      <div class="col-lg-10">
-        <div class="hero-kicker mb-2">Qarbon Mobile SupportQ</div>
-        <h1 class="display-5 fw-semibold mb-2">Get Support...</h1>
-        <p class="mb-0" style="color:#C7DFF8; max-width: 42rem;">
-          Describe your issue and Submit a support ticket to our IT team for assistance.
-        </p>
-      </div>
-    </div>
+<body style="width: 100% !important;min-height: 100% !important;margin: 0 !important;padding: 0 !important;line-height: 1.5;color: #2D3A41;background-color: #000C28;" bgcolor="#000C28">
 
-    <div class="row justify-content-center">
-      <div class="col-lg-10">
-        <div class="card contact-card">
-          <div class="row g-0">
-            <div class="col-lg-4">
-              <div class="contact-aside p-4 p-lg-5 h-100">
-                <hr class="aside-rule mb-4" />
-                <h2 class="h4 fw-semibold mb-3">Stuck?  Find Help</h2>
-                <p class="small mb-4" style="color:#C7DFF8;">
-                  Technical difficulties or unable to login?  Use this form to get support.
-                </p>
-                <div class="mb-4">
-                  <div class="small text-uppercase fw-semibold" style="letter-spacing:.08em; color:#F79E46;">Email</div>
-                  <div class="mt-1">Contact.Us@QarbonAerospace.com</div>
-                </div>
+<p align="center" style='margin: 0; padding: 10px; background:#000C28; border-bottom: 1px solid #1A2A4C;'>
+    <b><span style='font-size:11.0pt;font-family:"Space Mono", monospace;color:#78ADCF; letter-spacing: 1px;'>QARBON MOBILE SUPPORT //</span></b>
+    <span style='font-size:11.0pt;font-family:"Space Mono", monospace;color:#94A3B8;'> AUTOMATED NOTIFICATION</span>
+</p>
 
-                <div class="mb-4">
-                  <div class="small text-uppercase fw-semibold" style="letter-spacing:.08em; color:#F79E46;">Support Hours</div>
-                  <div class="mt-1">5AM - 5PM Central</div>
-                </div>
+ <table style="table-layout: fixed;min-width: 840px;background-color:#070E16;" bgcolor="#070E16" width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation">
+  <tr>
+   <td align="center" valign="top" style="padding: 40px 20px;">
+    <table style="width: 100%; max-width: 860px;" width="860" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation">
+     <tr>
+      <td align="left" valign="top">
+       
+       <!-- TICKET CONTAINER
+     Outlook Classic (Word) ignores CSS gradients, data-URI backgrounds,
+     and most VML fills. What it DOES honor: table/td bgcolor + nested tables.
+     Approach:
+       - Browsers: CSS linear-gradient on the outer table
+       - Outlook: 3 stacked rows with stepped bgcolor (blue -> slate -> sand)
+       - Dark message well is a TABLE with bgcolor, not a DIV
+-->
+       <table class="ticket-container" width="860" border="0" cellspacing="0" cellpadding="0" role="presentation" bgcolor="#D4DCE8" style="width:100%; max-width:860px; background-color:#D4DCE8; background-image:linear-gradient(180deg, #CFE0F2 0%, #E8D5C1 100%); border-top:8px solid #3F8DCC;">
+
+        <!-- TOP BAND: cool blue (Outlook paints bgcolor; browsers show parent gradient through) -->
+        <tr>
+         <!--[if mso]>
+         <td class="ticket-inner" valign="top" bgcolor="#C5D8EE" style="padding:40px 40px 18px 40px; background-color:#C5D8EE;">
+         <![endif]-->
+         <!--[if !mso]><!-->
+         <td class="ticket-inner" valign="top" style="padding:40px 40px 18px 40px;">
+         <!--<![endif]-->
+
+            <!-- PROGRESS TRACKER BAR WITH LABEL -->
+
+
+
+<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="margin:0 0 10px 0;">
+                <tr>
+                    <td bgcolor="#E4EDF5" style="font-family:'Space Mono',monospace; font-size:14.5px; font-weight:700; text-transform:uppercase; color:#0F172A; background-color:#E4EDF5; padding:4px 12px; border:1px solid #94A3B8;">
+                        TICKET PHASE
+                    </td>
+                </tr>
+            </table>
+
+            <table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" bgcolor="#0F172A" style="margin-bottom:24px; border:2px solid #0F172A; background-color:#0F172A;">
+                <tr>
+                    <td align="center" bgcolor="#3F8DCC" width="33%" style="width:33.3%; background-color:#3F8DCC; padding:12px 5px; border-right:2px solid #0F172A;">
+                        <span style="font-family: 'Space Mono', monospace; font-size: 15px; color: #FFFFFF; font-weight: 700; letter-spacing: 1px; text-transform: uppercase;">
+                            1. Submitted
+                        </span>
+                    </td>
+                    <td align="center" bgcolor="#000C28" width="33%" style="width:33.3%; background-color:#000C28; padding:12px 5px; border-right:2px solid #0F172A;">
+                        <span style="font-family: 'Space Mono', monospace; font-size: 15px; color: #FFFFFF; font-weight: 700; letter-spacing: 1px; text-transform: uppercase;">
+                            2. Assigned
+                        </span>
+                    </td>
+                    <td align="center" bgcolor="#000C28" width="34%" style="width:33.3%; background-color:#000C28; padding:12px 5px;">
+                        <span style="font-family: 'Space Mono', monospace; font-size: 15px; color: #FFFFFF; font-weight: 700; letter-spacing: 1px; text-transform: uppercase;">
+                            3. Closed
+                        </span>
+                    </td>
+                </tr>
+            </table>
+
+            
+         </td>
+        </tr>
+
+        <!-- MID BAND: pale slate -->
+        <tr>
+         <!--[if mso]>
+         <td valign="top" bgcolor="#D5DEE8" style="padding:0 40px 22px 40px; background-color:#D5DEE8;">
+         <![endif]-->
+         <!--[if !mso]><!-->
+         <td valign="top" style="padding:0 40px 22px 40px;">
+         <!--<![endif]-->
+
+            <!-- STRUCTURAL DATA GRID WITH OUTER BORDER -->
+
+            <table border="0" cellpadding="0" cellspacing="0" role="presentation" bgcolor="#E8EEF3" style="width:100%; margin:0 auto; border-collapse:collapse; border:2px solid #0F172A; background-color:#E8EEF3;">
                 
-                <div class="mb-4">
-                  <div class="small text-uppercase fw-semibold" style="letter-spacing:.08em; color:#F79E46;">Phone (Use After Hours)</div>
-                  <div class="mt-1">1-855-572-7266<br /> Option 3</div>
-                </div>
+                <!-- SUBJECT HEADER ROW (Vertically Expands) -->
+                <tr>
+                    <td class="grid-label" align="left" valign="top" style="width: 30%; padding: 20px 15px 20px 20px;">
+                        <div style="font-family: 'Space Mono', monospace; font-size: 14.5px; font-weight: 700; color: #1E2B33; text-transform: uppercase; line-height: 1.4;">
+                            Subject /<br/>Issue Summary /<br/>(Short Description)
+                        </div>
+                    </td>
+                    <td class="grid-value" align="left" valign="top" style="width: 70%; padding: 20px; overflow-wrap: break-word; word-break: break-word;">
+                        <h2 style="margin: 0; font-family: 'Poppins', sans-serif; font-size: 20px; font-weight: 700; color: #0F172A; letter-spacing: -0.5px; text-transform: uppercase; line-height: 1.3; white-space: normal;">
+                            REPLACE_ME__PROC_NAME__REPLACE_ME
 
-                <div class="d-flex flex-wrap gap-2 mt-4">
-                  <span class="chip">Defense</span>
-                  <span class="chip">Commercial</span>
-                  <span class="chip">Aerospace</span>
-                </div>
-              </div>
-            </div>
+                        </h2>
+                    </td>
+                </tr>
 
-            <div class="col-lg-8">
-              <div class="p-4 p-lg-5">
-                <form id="contactForm" novalidate>
-                  <!-- Honeypot: hidden from humans, filled in by most bots. Reject on the server if non-empty. -->
-                  <div class="visually-hidden" aria-hidden="true">
-                    <label for="website">Website</label>
-                    <input id="website" name="website" tabindex="-1" autocomplete="off" />
-                  </div>
-                  <div class="row g-3">
-                    <div class="col-md-6">
-                      <label class="form-label" for="firstName">First name</label>
-                      <input class="form-control" id="firstName" name="firstName" required />
-                    </div>
-                    <div class="col-md-6">
-                      <label class="form-label" for="lastName">Last name</label>
-                      <input class="form-control" id="lastName" name="lastName" required />
-                    </div>
-                    <div class="col-md-6">
-                      <label class="form-label" for="email">Work email</label>
-                      <input type="email" class="form-control" id="email" name="email" required />
-                    </div>
-                    <div class="col-md-6">
-                      <label class="form-label" for="phone">Phone</label>
-                      <input type="tel" class="form-control" id="phone" name="phone" />
-                    </div>
-                    <div class="col-md-6">
-                      <label class="form-label" for="subject">Short Description</label>
-                      <input class="form-control" id="subject" name="subject" required />
-                    </div>
-                    <div class="col-md-6">
-                      <label class="form-label" for="location">Location</label>
-                      <select class="form-select" id="location" name="location">
-                        <option value="Red Oak">Red Oak (ROF)</option>
-                        <option value="Milledgeville">Milledgeville (MVF)</option>
-                        <option value="Remote">Remote</option>
-                        
-                      </select>
-                    </div>
-                    <div class="col-12">
-                      <label class="form-label" for="message">Issue Details</label>
-                      <textarea class="form-control" id="message" name="message" rows="5" required placeholder="Tell us about the issue you're experiencing or technical question"></textarea>
-                    </div>
-                    <div class="col-12 d-flex align-items-center justify-content-between gap-3 flex-wrap">
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="consent" name="consent" required />
-                        <label class="form-check-label small" for="consent">
-                          I agree to be contacted about this inquiry.
-                        </label>
-                      </div>
-                      <button type="submit" class="btn btn-qarbon">Submit Ticket</button>
-                    </div>
-                  </div>
-                  <div id="errorPanel" class="alert alert-danger mt-3 mb-0 d-none" role="alert"></div>
-                </form>
+                <!-- DETAILS ROWS -->
+                <tr>
+                    <td class="grid-label" align="left" valign="top" style="padding: 16px 15px 16px 20px; font-family: 'Space Mono', monospace; font-size: 14.5px; font-weight: 700; color: #1E2B33; text-transform: uppercase;">
+                        Name
+                    </td>
+                    <td class="grid-value" align="left" valign="top" style="padding: 16px 20px; font-family: 'Poppins', sans-serif; font-size: 16px; font-weight: 500; color: #0F172A;">
+                        REPLACE_ME__USER_NAME__REPLACE_ME
+                    </td>
+                </tr>
+                <tr>
+                    <td class="grid-label" align="left" valign="top" style="padding: 16px 15px 16px 20px; font-family: 'Space Mono', monospace; font-size: 14.5px; font-weight: 700; color: #1E2B33; text-transform: uppercase;">
+                        Email
+                    </td>
+                    <td class="grid-value" align="left" valign="top" style="padding: 16px 20px; font-family: 'Poppins', sans-serif; font-size: 16px; font-weight: 500; color: #0D4E80;">
+                        REPLACE_ME__EMAIL__REPLACE_ME
+                    </td>
+                </tr>
+                <tr>
+                    <td class="grid-label" align="left" valign="top" style="padding: 16px 15px 16px 20px; font-family: 'Space Mono', monospace; font-size: 14.5px; font-weight: 700; color: #1E2B33; text-transform: uppercase;">
+                        Phone
+                    </td>
+                    <td class="grid-value" align="left" valign="top" style="padding: 16px 20px; font-family: 'Poppins', sans-serif; font-size: 16px; font-weight: 500; color: #0F172A;">
+                        REPLACE_ME__PHONE__REPLACE_ME
+                    </td>
+                </tr>
+                <tr>
+                    <td class="grid-label" align="left" valign="top" style="padding: 16px 15px 16px 20px; font-family: 'Space Mono', monospace; font-size: 14.5px; font-weight: 700; color: #1E2B33; text-transform: uppercase;">
+                        Timestamp
+                    </td>
+                    <td class="grid-value" align="left" valign="top" style="padding: 16px 20px; font-family: 'Poppins', sans-serif; font-size: 16px; font-weight: 500; color: #0F172A;">
+                        REPLACE_ME__TIMESTAMP__REPLACE_ME
+                    </td>
+                </tr>
+                <tr>
+                    <td class="grid-label" align="left" valign="top" style="padding: 16px 15px 16px 20px; font-family: 'Space Mono', monospace; font-size: 14.5px; font-weight: 700; color: #1E2B33; text-transform: uppercase;">
+                        Location
+                    </td>
+                    <td class="grid-value" align="left" valign="top" style="padding: 16px 20px; font-family: 'Poppins', sans-serif; font-size: 16px; font-weight: 500; color: #0F172A;">
+                        REPLACE_ME__LOCATION__REPLACE_ME
+                    </td>
+                </tr>
+                <tr class="grid-row-last">
+                    <td class="grid-label" align="left" valign="top" style="padding: 16px 15px 16px 20px; font-family: 'Space Mono', monospace; font-size: 14.5px; font-weight: 700; color: #1E2B33; text-transform: uppercase;">
+                        Consent
+                    </td>
+                    <td class="grid-value" align="left" valign="top" style="padding: 16px 20px; font-family: 'Poppins', sans-serif; font-size: 16px; font-weight: 600; color: #059669;">
+                        REPLACE_ME__CONSENT__REPLACE_ME
+                    </td>
+                </tr>
+            </table>
 
-                <div id="successPanel" class="success-panel text-center py-5">
-                  <div class="mb-2" style="color:#FF7006; letter-spacing:.16em; font-size:.75rem; font-weight:700;">RECEIVED</div>
-                  <h3 class="h4 mb-2">Thanks — your message is in flight.</h3>
-                  <p class="text-secondary mb-0">Ticket Submitted.  Please check your email inbox for for updates.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </main>
+            
+         </td>
+        </tr>
 
-  <footer class="container pb-4">
-    <div class="d-flex justify-content-between flex-wrap gap-2">
-      <div>© 2026 Qarbon Aerospace.  Mobile SupportQ</div>
-      <div>Build 260911c4</div>
-    </div>
-  </footer>
+        <!-- BOTTOM BAND: warm sand -->
+        <tr>
+         <!--[if mso]>
+         <td valign="top" bgcolor="#E8D5C1" style="padding:0 40px 40px 40px; background-color:#E8D5C1;">
+         <![endif]-->
+         <!--[if !mso]><!-->
+         <td valign="top" style="padding:0 40px 40px 40px;">
+         <!--<![endif]-->
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
-    // ---------------------------------------------------------------
-    // Paste the URL of whatever will actually send the mail:
-    //   Power Automate  -> "When an HTTP request is received" trigger URL
-    //   Azure Function  -> https://<app>.azurewebsites.net/api/contact
-    //   Formspree       -> https://formspree.io/f/<id>
-    //   Web3Forms       -> https://api.web3forms.com/submit  (also send access_key)
-    // ---------------------------------------------------------------
-    const ENDPOINT = 'https://dd224cebbec2e7c29b17b83da61a5a7.9.environment.api.high.powerplatform.microsoft.us:443/powerautomate/automations/direct/workflows/d408d9e1c1f4406daa77cfc52b81c762/triggers/manual/paths/invoke?api-version=1&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=dB9Ga_b1dQES4PHfgrRNbFV299vvDZ7nzJ9M0_gxf88';
+            <!-- DIAGNOSTIC / DESCRIPTION BODY -->
 
-    const form = document.getElementById('contactForm');
-    const success = document.getElementById('successPanel');
-    const errorPanel = document.getElementById('errorPanel');
-    const submitBtn = form.querySelector('button[type="submit"]');
-    const originalBtnText = submitBtn.textContent;
+            <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="margin:0 0 10px 0;">
+                <tr>
+                    <td bgcolor="#EFE6DA" style="font-family:'Space Mono',monospace; font-size:14.5px; font-weight:700; text-transform:uppercase; color:#0F172A; background-color:#EFE6DA; padding:4px 12px; border:1px solid #94A3B8;">
+                        Full Description
+                    </td>
+                </tr>
+            </table>
 
-    function showError(msg) {
-      errorPanel.textContent = msg;
-      errorPanel.classList.remove('d-none');
-    }
+            <table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" bgcolor="#070E16" style="background-color:#070E16; margin:0 auto 20px auto;">
+                <tr>
+                    <td bgcolor="#070E16" align="left" style="padding:16px; background-color:#070E16; text-align:left;">
+                        <p style="margin:0; font-family:'BrandFont', 'Space Mono', monospace; font-size:16px; line-height:1.6; font-weight:700; color:#4ADE80; white-space:pre-wrap;">> Message : <br /><strong>REPLACE_ME__MAIL_BODY__REPLACE_ME</strong></p>
+                    </td>
+                </tr>
+            </table>
 
-    form.addEventListener('submit', async (e) => {
-      e.preventDefault();
-      errorPanel.classList.add('d-none');
+            <!-- FOOTER / TIMESTAMP -->
+            <hr style="border: 0; border-top: 1px dashed #94A3B8; margin: 0 0 20px 0;">
+            
+            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td align="center">
+                        <p style="color:#070E16; font-family: 'Space Mono', monospace; font-size: 13.5px; line-height: 1.6; margin: 0;">
+                            TIMESTAMP: REPLACE_ME__TIMESTAMP__REPLACE_ME<br />
+                            ORIGIN: <a href="https://qarbonmobsup-e5bpghbghpbaetdw.centralus-01.azurewebsites.net/mobile-support-qarbon.html" style="color: #0D4E80; text-decoration: none; font-weight: bold;">Mobile Support Q</a>
+                        </p>
+                    </td>
+                </tr>
+            </table>
 
-      if (!form.checkValidity()) {
-        form.classList.add('was-validated');
-        return;
-      }
+         </td>
+        </tr>
+       </table>
+       
+       <!-- EXTERNAL FOOTER -->
+       <table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="margin-top: 20px;">
+           <tr>
+            <td align="center" style="padding: 16px;">
 
-      // Build the JSON body. Use this exact shape as the sample payload
-      // when you click "Use sample payload to generate schema" in the flow.
-      const data = Object.fromEntries(new FormData(form).entries());
-      const payload = {
-        firstName: data.firstName || '',
-        lastName: data.lastName || '',
-        email: data.email || '',
-        phone: data.phone || '',
-        subject: data.subject || '',
-        location: data.location || 'general',
-        message: data.message || '',
-        consent: document.getElementById('consent').checked,
-        website: data.website || '', 
-        submittedAt: new Date().toISOString(),
-        pageUrl: window.location.href
-      };
+<img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAACeQAAARqCAYAAAAj7+ezAAAACXBIWXMAAC4jAAAuIwF4pT92AAAgAElEQVR4nOzcwa6TORZGUWjx/q98e1STUtMFxU5++8taI2Y4kqWbc7yV719fX98AAAAAAAAAAACAP/Ofpw8AAAAAAAAAAAAACwR5AAAAAAAAAAAAEBDkAQAAAAAAAAAAQECQBwAAAAAAAAAAAAFBHgAAAAAAAAAAAAQEeQAAAAAAAAAAABAQ5AEAAAAAAAAAAEBAkAcAAAAAAAAAAAABQR4AAAAAAAAAAAAEBHkAAAAAAAAAAAAQEOQBAAAAAAAAAABAQJAHAAAAAAAAAAAAAUEeAAAAAAAAAAAABAR5AAAAAAAAAAAAEBDkAQAAAAAAAAAAQECQBwAAAAAAAAAAAAFBHgAAAAAAAAAAAAQEeQAAAAAAAAAAABAQ5AEAAAAAAAAAAEBAkAcAAAAAAAAAAAABQR4AAAAAAAAAAAAEBHkAAAAAAAAAAAAQEOQBAAAAAAAAAABAQJAHAAAAAAAAAAAAAUEeAAAAAAAAAAAABAR5AAAAAAAAAAAAEBDkAQAAAAAAAAAAQECQBwAAAAAAAAAAAAFBHgAAAAAAAAAAAAQEeQAAAAAAAAAAABAQ5AEAAAAAAAAAAEBAkAcAAAAAAAAAAAABQR4AAAAAAAAAAAAEBHkAAAAAAAAAAAAQEOQBAAAAAAAAAABAQJAHAAAAAAAAAAAAAUEeAAAAAAAAAAAABAR5AAAAAAAAAAAAEBDkAQAAAAAAAAAAQECQBwAAAAAAAAAAAAFBHgAAAAAAAAAAAAQEeQAAAAAAAAAAABAQ5AEAAAAAAAAAAEBAkAcAAAAAAAAAAAABQR4AAAAAAAAAAAAEBHkAAAAAAAAAAAAQEOQBAAAAAAAAAABAQJAHAAAAAAAAAAAAAUEeAAAAAAAAAAAABAR5AAAAAAAAAAAAEBDkAQAAAAAAAAAAQECQBwAAAAAAAAAAAAFBHgAAAAAAAAAAAAQEeQAAAAAAAAAAABAQ5AEAAAAAAAAAAEBAkAcAAAAAAAAAAAABQR4AAAAAAAAAAAAEBHkAAAAAAAAAAAAQEOQBAAAAAAAAAABAQJAHAAAAAAAAAAAAAUEeAAAAAAAAAAAABAR5AAAAAAAAAAAAEBDkAQAAAAAAAAAAQECQBwAAAAAAAAAAAAFBHgAAAAAAAAAAAAQEeQAAAAAAAAAAABAQ5AEAAAAAAAAAAEBAkAcAAAAAAAAAAAABQR4AAAAAAAAAAAAEBHkAAAAAAAAAAAAQEOQBAAAAAAAAAABAQJAHAAAAAAAAAAAAAUEeAAAAAAAAAAAABAR5AAAAAAAAAAAAEBDkAQAAAAAAAAAAQECQBwAAAAAAAAAAAAFBHgAAAAAAAAAAAAQEeQAAAAAAAAAAABAQ5AEAAAAAAAAAAEBAkAcAAAAAAAAAAAABQR4AAAAAAAAAAAAEBHkAAAAAAAAAAAAQEOQBAAAAAAAAAABAQJAHAAAAAAAAAAAAAUEeAAAAAAAAAAAABAR5AAAAAAAAAAAAEBDkAQAAAAAAAAAAQECQBwAAAAAAAAAAAAFBHgAAAAAAAAAAAAQEeQAAAAAAAAAAABAQ5AEAAAAAAAAAAEBAkAcAAAAAAAAAAAABQR4AAAAAAAAAAAAEBHkAAAAAAAAAAAAQEOQBAAAAAAAAAABAQJAHAAAAAAAAAAAAAUEeAAAAAAAAAAAABAR5AAAAAAAAAAAAEBDkAQAAAAAAAAAAQECQBwAAAAAAAAAAAAFBHgAAAAAAAAAAAAQEeQAAAAAAAAAAABAQ5AEAAAAAAAAAAEBAkAcAAAAAAAAAAAABQR4AAAAAAAAAAAAEBHkAAAAAAAAAAAAQEOQBAAAAAAAAAABAQJAHAAAAAAAAAAAAAUEeAAAAAAAAAAAABAR5AAAAAAAAAAAAEBDkAQAAAAAAAAAAQECQBwAAAAAAAAAAAAFBHgAAAAAAAAAAAAQEeQAAAAAAAAAAABAQ5AEAAAAAAAAAAEBAkAcAAAAAAAAAAAABQR4AAAAAAAAAAAAEBHkAAAAAAAAAAAAQEOQBAAAAAAAAAABAQJAHAAAAAAAAAAAAAUEeAAAAAAAAAAAABAR5AAAAAAAAAAAAEBDkAQAAAAAAAAAAQECQBwAAAAAAAAAAAAFBHgAAAAAAAAAAAAQEeQAAAAAAAAAAABAQ5AEAAAAAAAAAAEBAkAcAAAAAAAAAAAABQR4AAAAAAAAAAAAEBHkAAAAAAAAAAAAQEOQBAAAAAAAAAABAQJAHAAAAAAAAAAAAAUEeAAAAAAAAAAAABAR5AAAAAAAAAAAAEBDkAQAAAAAAAAAAQECQBwAAAAAAAAAAAAFBHgAAAAAAAAAAAAQEeQAAAAAAAAAAABAQ5AEAAAAAAAAAAEBAkAcAAAAAAAAAAAABQR4AAAAAAAAAAAAEBHkAAAAAAAAAAAAQEOQBAAAAAAAAAABAQJAHAAAAAAAAAAAAAUEeAAAAAAAAAAAABAR5AAAAAAAAAAAAEBDkAQAAAAAAAAAAQECQBwAAAAAAAAAAAAFBHgAAAAAAAAAAAAQEeQAAAAAAAAAAABAQ5AEAAAAAAAAAAEBAkAcAAAAAAAAAAAABQR4AAAAAAAAAAAAEBHkAAAAAAAAAAAAQEOQBAAAAAAAAAABAQJAHAAAAAAAAAAAAAUEeAAAAAAAAAAAABAR5AAAAAAAAAAAAEBDkAQAAAAAAAAAAQECQBwAAAAAAAAAAAAFBHgAAAAAAAAAAAAQEeQAAAAAAAAAAABAQ5AEAAAAAAAAAAEBAkAcAAAAAAAAAAAABQR4AAAAAAAAAAAAEBHkAAAAAAAAAAAAQEOQBAAAAAAAAAABAQJAHAAAAAAAAAAAAAUEeAAAAAAAAAAAABAR5AAAAAAAAAAAAEBDkAQAAAAAAAAAAQECQBwAAAAAAAAAAAAFBHgAAAAAAAAAAAAQEeQAAAAAAAAAAABAQ5AEAAAAAAAAAAEBAkAcAAAAAAAAAAAABQR4AAAAAAAAAAAAEBHkAAAAAAAAAAAAQEOQBAAAAAAAAAABAQJAHAAAAAAAAAAAAAUEeAAAAAAAAAAAABAR5AAAAAAAAAAAAEBDkAQAAAAAAAAAAQECQBwAAAAAAAAAAAAFBHgAAAAAAAAAAAAQEeQAAAAAAAAAAABAQ5AEAAAAAAAAAAEBAkAcAAAAAAAAAAAABQR4AAAAAAAAAAAAEBHkAAAAAAAAAAAAQEOQBAAAAAAAAAABAQJAHAAAAAAAAAAAAAUEeAAAAAAAAAAAABAR5AAAAAAAAAAAAEBDkAQAAAAAAAAAAQECQBwAAAAAAAAAAAAFBHgAAAAAAAAAAAAQEeQAAAAAAAAAAABAQ5AEAAAAAAAAAAEBAkAcAAAAAAAAAAAABQR4AAAAAAAAAAAAEBHkAAAAAAAAAAAAQEOQBAAAAAAAAAABAQJAHAAAAAAAAAAAAAUEeAAAAAAAAAAAABAR5AAAAAAAAAAAAEBDkAQAAAAAAAAAAQECQBwAAAAAAAAAAAAFBHgAAAAAAAAAAAAQEeQAAAAAAAAAAABAQ5AEAAAAAAAAAAEBAkAcAAAAAAAAAAAABQR4AAAAAAAAAAAAEBHkAAAAAAAAAAAAQEOQBAAAAAAAAAABAQJAHAAAAAAAAAAAAAUEeAAAAAAAAAAAABAR5AAAAAAAAAAAAEPjx9AEAAOBDfD19AAAIfX/6APAmvsMBsMh3OQAAeCG/kAcAAO9h2Q3AEpESn8A9B2CR/QQAALyYIA8AAN7H0huAJWIllrnfACyylwAAgDcQ5AEAwHtZfgOwRLTEIvcagEX2EQAA8CaCPAAAeD9LcACWiJdY4j4DsMgeAgAA3kiQBwAAz7AMB2CJiIkF7jEAi+wfAADgzQR5AADwHEtxAJaImbiZ+wvAInsHAAB4gCAPAACeZTkOwBJREzdybwFYZN8AAAAPEeQBAMDzLMkBWCJu4ibuKwCL7BkAAOBBgjwAADiDZTkAS0RO3MA9BWCR/QIAADxMkAcAAOewNAdgidiJk7mfACyyVwAAgAMI8gAA4CyW5wAsET1xIvcSgEX2CQAAcAhBHgAAnMcSHYAl4idO4j4CsMgeAQAADiLIAwCAM1mmA7BEBMUJ3EMAFtkfAADAYQR5AABwLkt1AJaIoXiS+wfAInsDAAA4kCAPAADOZrkOwBJRFE9w7wBYZF8AAACHEuQBAMD5LNkBWCKO4p3cNwAW2RMAAMDBBHkAAHAHy3YAloikeAf3DIBF9gMAAHA4QR4AANzD0h2AJWIpXsn9AmCRvQAAAFxAkAcAAHexfAdgiWiKV3CvAFhkHwAAAJcQ5AEAwH0s4QFYIp6i5D4BsMgeAAAALiLIAwCAO1nGA7BEREXBPQJgkfkfAAAuI8gDAIB7WcoDsERMxZ9wfwBYZO4HAIALCfIAAOBulvMALBFV8W+4NwAsMu8DAMClBHkAAHA/S3oAlnx9E1jx69wVABaZ8wEA4GKCPAAA2GBZD8AaoRX/xB0BYJH5HgAALifIAwCAHZb2AKwRXPEz7gYAi8z1AAAwQJAHAABbLO8BWCO84u/cCQAWmecBAGCEIA8AAPZY4gOwRoDFX9wFABaZ4wEAYIggDwAANlnmA7BGiIU7AMAi8zsAAIwR5AEAwC5LfQBghRgPgEXmdgAAGPTj6QMAAAAvZbkPACzwnQYAAACAK/iFPAAAAAAAAAAAAAgI8gAAAAAAAAAAACAgyAMAAAAAAAAAAICAIA8AAAAAAAAAAAACgjwAAAAAAAAAAAAICPIAAAAAAAAAAAAgIMgDAAAAAAAAAACAgCAPAAAAAAAAAAAAAoI8AAAAAAAAAAAACAjyAAAAAAAAAAAAICDIAwAAAAAAAAAAgIAgDwAAAAAAAAAAAAKCPAAAAAAAAAAAAAgI8gAAAAAAAAAAACAgyAMAAAAAAAAAAICAIA8AAAAAAAAAAAACgjwAAAAAAAAAAAAICPIAAAAAAAAAAAAgIMgDAAAAAAAAAACAgCAPAAAAAAAAAAAAAoI8AAAAAAAAAAAACAjyAAAAAAAAAAAAICDIAwAAAAAAAAAAgIAgDwAAAAAAAAAAAAKCPAAAAAAAAAAAAAgI8gAAAAAAAAAAACAgyAMAAAAAAAAAAICAIA8AAAAAAAAAAAACgjwAAAAAAAAAAAAICPIAAAAAAAAAAAAg8OPpAwAAAPO+nj4AAES+P32AB/l7DsCaT/67DgAAvJBfyAMAAACAX/OpUdqnfm4AAAAA+G2CPAAA4NX86gAASz4tTvu0zwvAZzCnAgAALyPIAwAA3sFjBwBLPiVS+5TPCcDn+P7NfAoAALyYIA8AAHgXjx4ALFmP1dY/HwCfx0wKAAC8hSAPAAB4Jw8gACxZjdZWPxcAn8ssCgAAvI0gDwAAeDcPIQAsWYvX1j4PAJhBAQCAtxLkAQAAT/AgAsCSlYht5XMAwF/MngAAwNsJ8gAAgKd4GAFgye0x2+3nB4C/M3MCAACPEOQBAABP8kACwJJbo7Zbzw0AP2PWBAAAHiPIAwAAnuahBIAlt8Vtt50XAP6JGRMAAHiUIA8AADiBBxMAltwSud1yTgD4VWZLAADgcYI8AADgFB5OAFhyeux2+vkA4HeZKQEAgCMI8gAAgJN4QAFgyanR26nnAoB/yywJAAAcQ5AHAACcxkMKAEtOi99OOw8A/CkzJAAAcBRBHgAAcCIPKgAsOSWCO+UcAFAxOwIAAMcR5AEAAKfysALAkqdjuKf/fwComRkBAIAjCfIAAICTeWABYMlTUZwYD4A1ZkUAAOBYgjwAAOB0HloAWPLuOE6MB8AaMyIAAHA0QR4AAHADDy4ALHlXJCfGA2CN2RAAADieIA8AALiFhxcAlrw6lhPjAbDGTAgAAFxBkAcAANzEAwwAS14VzYnxAFhjFgQAAK4hyAMAAG7jIQaAJXU8J8YDYI0ZEAAAuIogDwAAuJEHGQCWVBGdGA+ANWY/AADgOoI8AADgVh5mAFjypzGdGA+ANWY+AADgSoI8AADgZh5oAFjyb6M6MR4Aa8x6AADAtQR5AADA7TzUALDk69vvBXZiPADWmPEAAICrCfIAAIAFHmwAWPMroZ0YD4A1ZjsAAOB6gjwAAGCFhxsA1vy/4E6MB8AaMx0AADBBkAcAACzxgAPAmv8V3onxAFjy/ZtZDgAAGCLIAwAA1njIAWDN10/+DQC3M78BAABzBHkAAMAijzoArPn6JsYDYIu5DQAAmCTIAwAAVnncAQAAOJN5DQAAmPXj6QMAAAC8kEceAAAAAAAA3sYv5AEAAAAAAAAAAEBAkAcAAAAAAAAAAAABQR4AAAAAAAAAAAAEBHkAAAAAAAAAAAAQEOQBAAAAAAAAAABAQJAHAAAAAAAAAAAAAUEeAAAAAAAAAAAABAR5AAAAAAAAAAAAEBDkAQAAAAAAAAAAQECQBwAAAAAAAAAAAAFBHgAAAAAAAAAAAAQEeQAAAAAAAAAAABAQ5AEAAAAAAAAAAEBAkAcAAAAAAAAAAAABQR4AAAAAAAAAAAAEBHkAAAAAAAAAAAAQEOQBAAAAAAAAAABAQJAHAAAAAAAAAAAAAUEeAAAAAAAAAAAABAR5AAAAAAAAAAAAEBDkAQAAAAAAAAAAQECQBwAAAAAAAAAAAAFBHgAAAAAAAAAAAAQEeQAAAAAAAAAAABAQ5AEAAAAAAAAAAEBAkAcAAAAAAAAAAAABQR4AAAAAAAAAAAAEBHkAAAAAAAAAAAAQEOQBAAAAAAAAAABAQJAHAAAAAAAAAAAAAUEeAAAAAAAAAAAABAR5AAAAAAAAAAAAEBDkAQAAAAAAAAAAQECQBwAAAAAAAAAAAAFBHgAAAAAAAAAAAAQEeQAAAAAAAAAAABAQ5AEAAAAAAAAAAEBAkAcAAAAAAAAAAAABQR4AAAAAAAAAAAAEBHkAAAAAAAAAAAAQEOQBAAAAAAAAAABAQJAHAAAAAAAAAAAAAUEeAAAAAAAAAAAABAR5AAAAAAAAAAAAEBDkAQAAAAAAAAAAQECQBwAAAAAAAAAAAAFBHgAAAAAAAAAAAAQEeQAAAAAAAAAAABAQ5AEAAAAAAAAAAEBAkAcAAAAAAAAAAAABQR4AAAAAAAAAAAAEBHkAAAAAAAAAAAAQEOQBAAAAAAAAAABAQJAHAAAAAAAAAAAAAUEeAAAAAAAAAAAABAR5AAAAAAAAAAAAEBDkAQAAAAAAAAAAQECQBwAAAAAAAAAAAAFBHgAAAAAAAAAAAAQEeQAAAAAAAAAAABAQ5AEAAAAAAAAAAEBAkAcAAAAAAAAAAAABQR4AAAAAAAAAAAAEBHkAAAAAAAAAAAAQEOQBAAAAAAAAAABAQJAHAAAAAAAAAAAAAUEeAAAAAAAAAAAABAR5AAAAAAAAAAAAEBDkAQAAAAAAAAAAQECQBwAAAAAAAAAAAAFBHgAAAAAAAAAAAAQEeQAAAAAAAAAAABAQ5AEAAAAAAAAAAEBAkAcAAAAAAAAAAAABQR4AAAAAAAAAAAAEBHkAAAAAAAAAAAAQEOQBAAAAAAAAAABAQJAHAAAAAAAAAAAAAUEeAAAAAAAAAAAABAR5AAAAAAAAAAAAEBDkAQAAAAAAAAAAQECQBwAAAAAAAAAAAAFBHgAAAAAAAAAAAAQEeQAAAAAAAAAAABAQ5AEAAAAAAAAAAEBAkAcAAAAAAAAAAAABQR4AAAAAAAAAAAAEBHkAAAAAAAAAAAAQEOQBAAAAAAAAAABAQJAHAAAAAAAAAAAAAUEeAAAAAAAAAAAABAR5AAAAAAAAAAAAEBDk8V/27mW7jR1ZAmjxLP//L/MO3L5+SuIjq5CR2HvSw6YloICMikMBAAAAAAAAAABQQCEPAAAAAAAAAAAACijkAQAAAAAAAAAAQAGFPAAAAAAAAAAAACigkAcAAAAAAAAAAAAFFPIAAAAAAAAAAACggEIeAAAAAAAAAAAAFFDIAwAAAAAAAAAAgAIKeQAAAAAAAAAAAFBAIQ8AAAAAAAAAAAAKKOQBAAAAAAAAAABAAYU8AAAAAAAAAAAAKKCQBwAAAAAAAAAAAAUU8gAAAAAAAAAAAKCAQh4AAAAAAAAAAAAUUMgDAAAAAAAAAACAAgp5AAAAAAAAAAAAUEAhDwAAAAAAAAAAAAoo5AEAAAAAAAAAAEABhTwAAAAAAAAAAAAooJAHAAAAAAAAAAAABRTyAAAAAAAAAAAAoIBCHgAAAAAAAAAAABRQyAMAAAAAAAAAAIACCnkAAAAAAAAAAABQQCEPAAAAAAAAAAAACijkAQAAAAAAAAAAQAGFPAAAAAAAAAAAACigkAcAAAAAAAAAAAAFFPIAAAAAAAAAAACggEIeAAAAAAAAAAAAFFDIAwAAAAAAAAAAgAIKeQAAAAAAAAAAAFBAIQ8AAAAAAAAAAAAKKOQBAAAAAAAAAABAAYU8AAAAAAAAAAAAKKCQBwAAAAAAAAAAAAUU8gAAAAAAAAAAAKCAQh4AAAAAAAAAAAAUUMgDAAAAAAAAAACAAgp5AAAAAAAAAAAAUEAhDwAAAAAAAAAAAAoo5AEAAAAAAAAAAEABhTwAAAAAAAAAAAAooJAHAAAAAAAAAAAABRTyAAAAAAAAAAAAoIBCHgAAAAAAAAAAABRQyAMAAAAAAAAAAIACCnkAAAAAAAAAAABQQCEPAAAAAAAAAAAACijkAQAAAAAAAAAAQAGFPAAAAAAAAAAAACigkAcAAAAAAAAAAAAFFPIAAAAAAAAAAACggEIeAAAAAAAAAAAAFFDIAwAAAAAAAAAAgAIKeQAAAAAAAAAAAFBAIQ8AAAAAAAAAAAAKKOQBAAAAAAAAAABAAYU8AAAAAAAAAAAAKKCQBwAAAAAAAAAAAAUU8gAA6Oi++gMAAAAAAAAAPEshDwCAbu5//C8AAAAAAABABIU8AAA6U8oDAAAAAAAAYijkAQDQiQIeAAAAAAAAEEshDwCALj4q4ynpAQAAAAAAABEU8gAASKCUBwAAAAAAALSnkAcAQAcKdwAAAAAAAEA8hTwAAFZ7tIyntAcAAAAAAAC0ppAHAMBKz5bslPIAAAAAAACAtr6t/gDA0xQRmOa2+gMAce6HZwcAAAAAAADQkEIe9KV4xy4+W+sKNzCbsw4AgB/cDaGWTAV+csYwnWc+AEAzt/vdHAJN2IzwNcECzFFx7nkmQBb3XXiPc4/pnBNwPmcJ0zlL4CfPfFY46zlsPcPvutx57E34hG/Ig/W6HJiQ4Md+ccEDjsOfrgVgLx/Njs5CAB7161ni/GAK+Tr8m2c+k8iBAYijkAdrCAngPYp5kM05CAB1vGgD4BXOD5LJFeA5nvlM4L0QAFH+W/0BYEPCAqhzP+wpSFO9Zz0DAOCn++GODMDznB2ksFbhffYR6axfACL4hjy4jgsinMd/GQV78ycLAOBvvgUDgGfJV+hKtg71PPNJJg8GoD3fkAfn818bwXXsN+jN/gSANdyTAXiGc4NOrEU4lz1GKvcVAFpTyINzuQjCGvYe9HP2vrTvAeBrXlgA8AznBitZf3Ad+41k1i4ALSnkwXlcAGEtexD2Y98DwGOcmQA8w7nB1aw5WMPeI5W1C0A7CnlwDhc/6MFehB7sRQDox7dgAPAMZwZXsdZgLXMCqaxdAFpRyINaLnvQjz0Ja129B+15AHiOsxOAR8k+OZP1Bb3Yj6SydgFoQSEP6rjgQV/2J+zFngeA53gBDsAznBlUs6agJ3uTVNYuAMsp5EENFzvozz6F663cd/Y8ADzP+QnAo5wZVLGWoDd7lFT+wzMAllLIA2Anhi+4jv0GAJmc4QA8ypkBsAfPe5JZvwAsoZAH73ORgyz2LJyvyz7r8jkAII0zFIBHOTN4h/UDwBWcNwBcTiEP3uMCB5nsXdiH/Q4Ar3GGAvAoZwavsG4giz1LOn/CFoBLKeTB61zaAOBvzkcAmMO5DsCjnBk8w3qBTPYuE1jHAFxCIQ+AXRm6oF7XfdX1cwFAAucoAI9yZvAI6wSy2cNMYB0DcDqFPHiNixrMYC/DPux3AHidcxSARzkzAIAE7iwAnEohD57nggYAf3M+AsBsznoA4F3uEzCDvcwU98N6BuAkCnkA7M6wBe9L2UcpnxMAunKWAvAI5wXAfJ71TGI9A1BOIQ+e40IGANmc5QDwHmcpAI9wXvAnawKAzpxTAJRSyAMAgxa8w/4BAAAAPiM7gJnsbabxJ2wBKKOQB49zAQOA36WejamfGwC6cJYC8AjnBQCQyB0GgLcp5AHAdwYs2Is9DwDvcZYC8AjnBcBsnvNMZW0D8BaFPAAAXiGQAAAAAL4iPwAglT9hC8DLFPLgMS5bAPDTlHNxyr8DAFZxlgLwCOcFAJDMXQaApynkAcBPhirYj30PAO9xlgIAH3FPgD3Y6+zAOgfgKQp5AAA8Y2LwMPHfBAAA0Im5CwBI5z4DwMMU8uBrLlcA8J0zEQD4F3cEAAAAdnA/zMAAPEAhDwB+Z5CCf5u+N6b/+wAAAFYzdwHM5RnPbqx5AD6lkAcAAN8JUQDgdc5RAOBX7gYATOesA+BDCnkAAHxFsAAAAAAAAL/zJ2wB+Kdvqz8AcKrb6g/A1gwgMMNue/l+OD8BAADOYuYCACZyxwHgNwp5MI/LHl38uhZ3K/QA2YQnMJv9TTeT7srOUAAgnbsMq02aD2A3ZmIA/p9CHnwuafBxwaOzH+szaU8B9iwAXOHPWc75C+vJWOjMOQHn8OynC/+hO2RTygPgOI7j+G/1BwDedjtc7MhhrUKO3QO/3f/9AKxjxgPgM7cj/6wwb9FJ+n5itrT16fkO390P+wFgewp5kC1pEIMf0kIEYF9CEwBWSr03Oz8BrpN6VkAH9g9JrFfIZD4G2JhCHmQyfDGBNQx9CQoAoA/zHwBfcVbAc+wXUlm7kEfWDrAphTzIY+BiEusZ+hEQ/M7PA4Au3J0B+IqzAj6nvMoE1jDkkTEDbEghD7IYtJjIuga6E5gA0BB5mdIAACAASURBVEXK3dnZCbBOylnBbB3vAvYGk1jPkOd+9DwfATiJQh4AHQgQoAeBwMf8bADowt0ZgK8knBVmLK6UsCfgWdY1ZHIHAtiEQh7kMFwBcCZBAADkMB8C8BVnBcB8nvWQSRYPsAGFPMhgqGIH1jnQnaAEgE7cnwH4irMC7APms8Yhkz9hCzCcQh4AnQgPYA2D/+P8rADoxP0ZgK84K9iZ9Q9Ad/JmgKEU8qA/oQEAZzLwAwAAAEAu75Egm4weYCCFPAC6ER4A3QlIAOik6/3ZeQnQR9ezAs5k3QOQxAwNMIxCHvQmNADgTIb81/nZAQAAANCF90mQ737InQHGUMgDANiTwR4A5vDyDYCvOCsAADLI7gEGUMgDANhPwkCf8LIo4ecIAAAAu0nIFADgM7JngHAKeQB0JDQDjiPjWSAYAaCLhHMTAAA4j5kAZpE9AwRTyAMA2EvCEC88BAAAqGfWAgDIcj8yMn0A/qCQB30JyAColjC4/3n+JZyHCT9XAAAAAAAyyaABwijkAQDQnVIeADwm4cwEAAAAnieDBgiikAcAsIeEYV2JAAAAAHiHbAGAyRJyfgAOhTwAgB0kDOlfBeYJgXrCzxkAAAAAYLqEPPlV90MWDdCeQh4AACkSQhRBCAAAAADAegl58jtk0QCNKeQBAMyWMJRPC0YSfuYAAAAAANNNy57/JIsGaEohDwBgroRh/NlAZHqAAgAAAABAndsxO1dOeA8AsB2FPAAA0iSEJ0IQAAAAAIA+EnLlV8mjAZpRyAMAmClhAJ8cgBxHxu8AAAAAAGAXkzPp+yGTBmhDIQ8AYJ6Eofvd4GNycAIAAAAAwDmmZ8sJ7wcAxlPIAwAgVUJwIvwAAAAAAOjldmTky6+SSwMsppAHADBLwqA9Oej4l4TfCQAAAADAbiZn1XJpgIUU8gAA5kgYsKsDjsmBCQAAAAAA55qcMd+PjPcGAOMo5AEAzLDzUJ0QmOz8+wEAAAAA6CwhY36HfBrgYgp5AABcZXqo8RWhBwAAAABAT7djdoYtnwa4kEIeAEC+hEH67CBjclACAAAAAMA1JmfNCe8SAEZQyAMAyGaA/ikhKPH7AgAAAADoLSFrftX9kFMDnE4hDwCAs00OL14h7AAAAAAA6G16ri2nBjiRQh4AQK6Egfnq0CIlJEn43QEAAAAA7Ox25GTOr5BTA5xEIQ8AIJNB+WOTAxIAAAAAAK41OXP2rgHgBAp5AACcZXJIUUHQAQAAAACQYXLeLasGKKaQBwCQJ2E4Xh1OrP7/f1TC7xIAAAAAgJzc+RX3Q14NUEYhDwAgi4H4cZPDEQAAgGeZJwEA3nc7ZmfP7owABRTyAACoNjmMOIOAAwAAAAAgy+QcXGYN8CaFPACAHAlDcLcQotvn+UjC7xYAAAAAgJ9S8udXyKwB3qCQBwCQwfD7usmhCAAAwCPMlAAA55icP98P90iAlyjkAQBQZXLwcAXBBgDvcpYAAADA9W7H7Hxc3gDwJIU8AID+Eobd7mFD98/3Q8LvGgAAyGLOAAC4RkoO/Qp3SoAnKOQBAPRmyK0zOQwBAAAAAGC9yTm09xUAD1LIAwDoK2W4nRwwrJDyewcAAPozXwAAXG9yZn4/3DEBvqSQBwDAO9KChZTPK9AA4FnODgD+5GwAAFjnduTk0a9w1wT4hEIeAEBPhtnzpIQg1gAAAPCq7vNEylwGAPCuyfee7ndOgGUU8gAA+kkZYicHCQCQJOXuAMA1nAsAAL1MztLdPQH+QSEPAIBXpAcIKZ9fmAEAADzDDAEA0FNKJv0Kd1CAPyjkAQD0YnC9TkoAYk0A8BnnBADH8f08cCYAAPR2O3Jy6We5jwL8QiEPAKCPlGF1amAAAGlS7g4AnCvtPDBTAgC7m3wfSrubApxCIQ8AgGdMCwpS/j1CDAD+5GwA2Nv98C0kAADJUrLpV7ijAtv7tvoDAABwHIcBdaXbkfHzvx+zQxoAgC4S7oYAAEC+lGz6FfJsYGu+IQ8AYL2UgdvwDAA9pNwdAAAAgM9Nzt19ozOwLYU8AAAeMTkUOI6cf5/wAmBvgmwA0qXMXgAAV7ods+9JsgxgOwp5AABrGUT7SAk8rBmAPXn+AwAAwGwpGfUr5BrAVhTyAADWSRlAJ4cAAJAg5c7wK/cHAP7kbAAA+NrkO1NivgHwEoU8AAA+M3n4/5eUf6/gAmAP/kQtAAAA7Cclp36FnAPYgkIeAMAaCUPn5KH/Myn/7oQ1BMBrFPEAAABgb7cjJ6t+ltwDGE8hDwDgegbN/qYGHQD0dT8E0gDMZcYCAHjN5HuUDAQY69vqDwAAsJmUAXPykD/J/fC7gmelPIcBAAAA4Di+Z8BTMy0ZNzCSb8gDAOBPht/vUn4OU4MYAHKlnKEAXMO5AADwvsl3Khk3MI5CHgDAdQyVeVJCDmsLAADoKGWmAgBIMPluJeMGRlHIAwC4RsowOXmgBwAAAACAZLdjbo5/P3LepQB8SiEPAIAfpg7x70r5uQgqAACATlJmKQCARJPvWrJuIJ5CHgDA+QyP+VLCDWsNgNVSzkwAAABIN3kGl3UD0RTyAADOlTI0Th7cAQAAuJYZEwDgGpPvXSnvVwD+opAHAMDkgb1Sys9JSAHAKilnJQDnch4AAFzrdsy9g90PmTcQSCEPAOA8hsR5UkINaw8AAFghZWYCAJho8l1M5g1EUcgDADhHynA4eUAHAADgOuZLAID1Jt/JUt67ACjkAQBsbPJgfqaUn5twAoArpZyPAJzHDAIA0MPkGd2dE4igkAcAUM9AOF9KoGEtAgAAVzKDAAD0kJJhv8KdE2hPIQ8AoFbKIDh5GAcAruVeAcCvUuZiAIDpbsfcmf1+uHcCjSnkAQDsZ+oAfrWUn6NQAgAAuJo5BACgj5Qs+xXunUBLCnkAAHUMfvtJCTKsTQDOknIWAgAAwM4mz+/yb6AdhTwAgBopA9/koZvPpaxRAABgBjMIAEAvk98PuHsCrSjkAQC8L2XQmzxsr+TnCsCunIEAAACQ5XbMnefvR877GmA4hTwAAHhfSoAhjACgSsrZB8BaZhAAgJ4mz/XuoMByCnkAAO9JGewmD9c8J2XNAgAAM5hBAAB6mvzewB0UWEohDwDgdSkD3eShuhM/ZwB24cwDAACAGSbP+CnvcICBFPIAAKBOSnghiADgVSlnHQC9mEEAAPqaPOu7hwJLKOQBALwmZYibPEjznpQ1DEAf7hUAAAAw0+2YO/ffD3k4cDGFPACA56UMblOH5+783AGYyPkGAAAA802e/1Pe7QADKOQBAEC9lNBCAAEAAFzF/AEAkCEl336FOylwCYU8AIDnpAxrkwdmaqWsaQDWcl4AAADAPia/Y5BxAKdTyAMAeFzKkDZ5UE7i9wAAAPC7lLkaAIDvGffUnPt+uJsCJ1LIAwCA86SEFYIHAB7hvAAAAID9pOTcr5B1AKf4tvoDAACESBnKJg/GnOt+WD8AfM15wQ6scbpLmU8BAJjjdsy9h8o6gHK+IQ8A4GspQ6aBsSe/FwAAoNLtmP3nwwAA6Gny/TPlPRAQQiEPAADOlxJUCB0AeITzAqCPlFnjV84RAIBciffPR7mnAmUU8gAAPpcygE0egrlWypoHAAC+8215AABcafL9837IyIECCnkAAB9LGbqmDr7TJP2eUtY+AOs4KwD6SZo5AADIN/n+KfcA3qKQBwDwb4YtzjA5oABgP+5LAP1M/rYSAAD6mXz3lHsAL1PIAwDINnnYZS1hAwAA5Oo+K5o3AADm6H73fId7K/AShTwAgL+lDFiTh9zJkn5vKXsBgHWcFQAAAMDkb2q+H/IP4EnfVn8AAIBmkoaqpM8KAADAtW6HuREAgGtNvoPej7mlQ6CYb8gDAAA+MzU8AaCOswKgLy8MAQC42uQ7qAwEeIhCHgDATwYp+Dd7AwAAAACARynlAVtTyAMA+M4ABQDwOncpgL4mvwwFAKCvyffQ+yELAT6hkAcAADxCuADAV5wVAAAAwK9ux/xiHsBfvq3+AAAADRiY4DH3Y3Z4wj6sY1K5swDwqtvhHAEAYJ3J91G5OfAX35AHAOxu6gAIAMyTEO66WwEAAAD/kpBrvEoeAvxGIQ8AAHiGYAFgrcnhNQDncoYAALDa5Dvp/ZCfA/+jkAcA7MxgBK+xdwD4jHMCAAAA+MjtmF/MAzankAcA7MpABO+xhwDWmRxaAwAAAHuYnG/Iz2FzCnkAAAAAVBM8AwAAAF9RygNGUsgDAHZkCIIa9hLAOpMDawAAAGAfkzOO+yFHhy19W/0BAE7S5WIz+QIJqbo8H2CK++G8AwAAAADgdbdj9vsbOTpsxjfkAQA7mTzMAQD7EeQCAAAAU9yO2VmHd1SwEYU8AADgXYIEgHUmB9UAAADAfiZnHbJ02IRCHgCwC0MOnMseAwAAAACgwvRSnjwdhlPIAwB2YLABACabHFIDAAAAe5qed3h3BYMp5AEAAFUECAAAAAAAVLkds4t5MnUYSiEPAJjOMAPXsucA1pgcTgMAAAB7m5x7yNRhIIU8AGAyQwwAAAAAAEC+6aU877RgEIU8AACgmuAAYI3JwTQAAADA9OxDtg5DKOQBAFMZWmAtexAAAAAAgGpKeUB7CnkAwESGFQAAAAAAgJlux+xinvdcEE4hDwAAOIvQAAAAAACAs0wv5cnYIZRCHgAwjeEEerEnAQAAAAA4y+RS3nHI2CGSQh4AMImhBHqyNwGuMz2EBgAAAPjT9DxExg5hFPIAAAAAAACYwMtqANjX7ZhdzHPPgSAKeQDAFAYR6M0eBQAAAADgbEp5wHIKedCXwxTgcZ6ZkMFeBQAAAADgbJNLeUAAhTwAIJ2CDwAAAAAAAL9SygOWUcgDoCMFK4C5POMBAAAAALjC7VDMAxZQyAMAkin2QCZ7FwAAruceDgDArpTygEsp5EFvQjKAj3lGAgAAAAB8Jy8F+JxSHnAZhTwAAGAFITEAAABnMG8CAB9RygMuoZAHQDcCMx5hncAM9jIAAFzD3RsAAL67HYp5wMkU8qA/YRnA7zwXAQAAAPiM/IjdWPMAz1PKA06jkAdAJ0IDgP149gMAwLncuQEA4N+U8oBTfFv9AYCH3A+XAeYTDvOIpHXiuU0HKXvGXQcAAIBqZk12kZL/AHR1OzxLgWK+IQ9yuAQAu/MchOclvXiwxwEAoJ57NsBsnvMANW5HVp4ONKeQB1kMVkxlbTONoQ0AAIDV5C1gHwAAz/F+ByihkAfAakIxHpG0TgxrdJO0JpP2OgAAdNb9bp00p5Cv+36AV1nbAOdwVwXeppAHeQxYTGI98wjrBN6XFCDY8wAA8B53avibfcE01jTAuZIydaAhhTzIdD8MW+SzhpnIgAYAAMBK8hY66JqP2B9MYS0DXON29L3XAM0p5EE2QxeJFEp5RtJaMZTRXdIaTdr7AADQhXs0fM0+IZ01DHC9pGwdaEIhD/IpN5HEWuUZ1gvUSwoOPAMAAOAx8kF4jj1DIusWYK2kbB1o4NvqDwDN3Y6cAefH53QZoJuUPUQvaevGsxcAAICrpc3OP5ih6eJ+WI/0l/Sst5+A6X4855KezcAiCnkwz68XAMMPq7iIshPPWtKk/QcH9hgAAPwu5T4PCeTpdOVZD9BXUsYOLKKQB7O5CKzndwDPS9o3glpSJQUGSnkAwNVS7kkA1FLOYyX3D4AsSRk7sIBCHgDQieEFAAAA5lJyIoWMCgD4ilIe8KH/Vn8AAIBQXiKQLmkNCzUAAAAAAOjmdmRl7cBFFPLgaw5Q2Is9v05S4cY6YYqktZz0jAAAAAAAYB9JWTtwAYU8AKADRRvgEZ4VAACQy0vKvfh9w17seQDPQuAXCnkAAM8xUDGNNQ0AAAAAAO+TtwPHcSjkAcCvXJLXSPrGK2uEqZLWdtIzAwAA+C5p5gAAgHfcDvdf2J5CHjzGgQlwDsUa4BWeHQAAAP3J1QGAnbkLwcYU8gAAHmNwYjprHAAAOINZA2A2z3mAj3lGwqYU8uBxDkuYzR6/XtI3XFkf7CJprSc9QwAAAAAA2JM/YQsbUsgDAFZQpAEqeJYAAEBvXjxiDcBs9jjA4zwzYSMKeQDgAsznrA92Y80DAAAAAEA9+TtsQiEPnuOABHhf0jdaee6zq6S1n/RMAQCAnSTNFZzLWoCZ7G2A13h+wgYU8uB5DkiYxZ6+luIMcAbPFgAA6EXeAgAAH7sd7swwmkIeAHCVtMKMQYjd2QMAAABUMWPCLPY0QA3PUxhKIQ9e42CEGexlPmJtQJ600i8AAExlpgYAgMe5P8NACnkA7Mrl9lqKMpAp7VnpWQMAAGulzRBcy/qAGexlgHr+hC0Mo5AHr3MgAjwmrSDj+Q6/sycAAIBHmB14hHUC2exhgHN5zsIQCnnwHgciZLJ3+Yi1AfnSSsAAADCBeRoAAGq4W8MACnnwPgciZLFnr6UYAzOkPTs9ewAA4Dpp8wLrWTOQyd4FuI4/YQvhFPKghsMQMtir10orxFgf8Lm0PZL2DAIAgERpcwJ9WDuQxZ4FWMPzF0Ip5EEdhyH0Zo/yGesDAAAAnmOW5l3WEGSwVwHW8hyGQAp5UMthCD3Zm9fzzVQwU9rz1LMIAADOkTYb0Je1BL3ZowA9+BO2EEYhD+o5CKEXe/J6aQUYawSek7Zn0p5JAADQXdpMQH/WFPRkbwL049kMIRTy4BwOQujBXuQr1ggAAAA8zhzNWawt6MWeBOjLMxoCKOTBeRyEsJY9uIZvooI9pD1jPZsAAOA9/kQWV7DGoAd7EaA/93NoTiEPzuUQhOu5gK6TVnixTuA9aXso7RkFAABdpN39yWa9wVr2IEAWz21o6tvqDwAb+HEIegkM53Pp5FHWCgAAAHzO7MwqMnW4nmc+QK7b4d4E7fiGPLiOb+2C89hf67now57Snr2eVQAA8DU5C11Yh3ANew0gnzs8NKOQB9dzGEId+6mHtIKLNQO10vZU2jMLAACuImehI+sSzmN/AczjuQ5N+JO1sI6v3YfXuUz2kfYMs3YAAADgd2ZlEsjToY7nPsBs/oQtNKCQB+sJEuAxQgKAvtIG/PvhXAEAAHdiEsnT4XWe+wD7cGeCxRTyoI8/ByGHIwgIukt7TllPcK60Uh4AAOzIbMwUv65lsyh8zHMfYG9ye1jkdr/be8BIXR5uhl0AAAD4Wpc5HiaRS7ErZwo78+wHAGjAN+QBAAAAAKt5eQxAFWcKAACw1H+rPwAAAAAAAAAAAABMoJAHAAAAAAAAAAAABRTyAAAAAAAAAAAAoIBCHgAAAAAAAAAAABRQyAMAAAAAAAAAAIACCnkAAAAAAAAAAABQQCEPAAAAAAAAAAAACijkAQAAAAAAAAAAQAGFPAAAAAAAAAAAACigkAcAAAAAAAAAAAAFFPIAAAAAAAAAAACggEIeAAAAAAAAAAAAFFDIAwAAAAAAAAAAgAIKeQAAAAAAAAAAAFBAIQ8AAAAAAAAAAAAKKOQBAAAAAAAAAABAAYU8AAAAAAAAAAAAKKCQBwAAAAAAAAAAAAUU8gAAAAAAAAAAAKCAQh4AAAAAAAAAAAAUUMgDAAAAAAAAAACAAgp5AAAAAAAAAAAAUEAhDwAAAAAAAAAAAAoo5AEAAAAAAAAAAEABhTwAAAAAAAAAAAAooJAHAAAAAAAAAAAABRTyAAAAAAAAAAAAoIBCHgAAAAAAAAAAABRQyAMAAAAAAAAAAIACCnkAAAAAAAAAAABQQCEPAAAAAAAAAAAACijkAQAAAAAAAAAAQAGFPAAAAAAAAAAAACigkAcAAAAAAAAAAAAFFPIAAAAAAAAAAACgwLfVHwDgJLfVHwAAAAAAAAAAgL34hjwAAAAAAAAAAAAooJAHAAAAAAAAAAAABRTyAAAAAAAAAAAAoIBCHgAAAAAAAAAAABRQyAMAAAAAAAAAAIACCnkAAAAAAAAAAABQQCEPAAAAAAAAAAAACijkAQAAAAAAAAAAQAGFPAAAAAAAAAAAACigkAcAAAAAAAAAAAAFFPIAAAAAAAAAAACggEIeAAAAAAAAAAAAFFDIAwAAAAAAAAAAgAIKeQAAAAAAAAAAAFBAIQ8AAAAAAAAAAAAKKOQBAAAAAAAAAABAAYU8AAAAAAAAAAAAKKCQBwAAAAAAAAAAAAUU8gAAAAAAAAAAAKCAQh4AAAAAAAAAAAAUUMgDAAAAAAAAAACAAgp5AAAAAAAAAAAAUEAhDwAAAAAAAAAAAAoo5AEAAAAAAAAAAEABhTwAAAAAAAAAAAAooJAHAAAAAAAAAAAABRTyAAAAAAAAAAAAoIBCHgAAAAAAAAAAABRQyAMAAAAAAAAAAIACCnkAAAAAAAAAAABQQCEPAAAAAAAAAAAACijkAQAAAAAAAAAAQAGFPAAAAAAAAAAAACigkAcAAAAAAAAAAAAFFPIAAAAAAAAAAACggEIeAAAAAAAAAAAAFFDIAwAAAAAAAAAAgAIKeQAAAAAAAAAAAFBAIQ8AAAAAAAAAAAAKKOQBAAAAAAAAAABAAYU8AAAAAAAAAAAAKKCQBwAAAAAAAAAAAAUU8gAAAAAAAAAAAKCAQh4AAAAAAAAAAAAUUMgDAAAAAAAAAACAAgp5AAAAAAAAAAAAUEAhDwAAAAAAAAAAAAoo5AEAAAAAAAAAAEABhTwAAAAAAAAAAAAooJAHAAAAAAAAAAAABRTyAAAAAAAAAAAAoIBCHgAAAAAAAAAAABRQyAMAAAAAAAAAAIACCnkAAAAAAAAAAABQQCEPAAAAAAAAAAAACijkAQAAAAAAAAAAQAGFPAAAAAAAAAAAACigkAcAAAAAAAAAAAAFFPIAAAAAAAAAAACggEIeAAAAAAAAAAAAFFDIAwAAAAAAAAAAgAIKeQAAAAAAAAAAAFBAIQ8AAAAAAAAAAAAKKOQBAAAAAAAAAABAAYU8AAAAAAAAAAAAKKCQBwAAAAAAAAAAAAUU8gAAAAAAAAAAAKCAQh4AAMD/tXd3y5HaahhGaZfv/5Y7R056OraHn1fSJ7FW1T6bsSmQBHv0BAAAAAAAACBAkAcAAAAAAAAAAAABgjwAAAAAAAAAAAAIEOQBAAAAAAAAAABAgCAPAAAAAAAAAAAAAgR5AAAAAAAAAAAAECDIAwAAAAAAAAAAgABBHgAAAAAAAAAAAAQI8gAAAAAAAAAAACBAkAcAAAAAAAAAAAABgjwAAAAAAAAAAAAIEOQBAAAAAAAAAABAgCAPAAAAAAAAAAAAAgR5AAAAAAAAAAAAECDIAwAAAAAAAAAAgABBHgAAAAAAAAAAAAQI8gAAAAAAAAAAACBAkAcAAAAAAAAAAAABgjwAAAAAAAAAAAAIEOQBAAAAAAAAAABAgCAPAAAAAAAAAAAAAgR5AAAAAAAAAAAAECDIAwAAAAAAAAAAgABBHgAAAAAAAAAAAAQI8gAAAAAAAAAAACBAkAcAAAAAAAAAAAABgjwAAAAAAAAAAAAIEOQBAAAAAAAAAABAgCAPAAAAAAAAAAAAAgR5AAAAAAAAAAAAECDIAwAAAAAAAAAAgABBHgAAAAAAAAAAAAQI8gAAAAAAAAAAACBAkAcAAAAAAAAAAAABgjwAAAAAAAAAAAAIEOQBAAAAAAAAAABAgCAPAAAAAAAAAAAAAgR5AAAAAAAAAAAAECDIAwAAAAAAAAAAgABBHgAAAAAAAAAAAAQI8gAAAAAAAAAAACBAkAcAAAAAAAAAAAABgjwAAAAAAAAAAAAIEOQBAAAAAAAAAABAgCAPAAAAAAAAAAAAAgR5AAAAAAAAAAAAECDIAwAAAAAAAAAAgABBHgAAAAAAAAAAAAQI8gAAAAAAAAAAACBAkAcAAAAAAAAAAAABgjwAAAAAAAAAAAAIEOQBAAAAAAAAAABAgCAPAAAAAAAAAAAAAgR5AAAAAAAAAAAAECDIAwAAAAAAAAAAgABBHgAAAAAAAAAAAAR8jj4AAAAAAP7qGfo5j9DPAQAAAADgG4I8AABY15F4Q6AxViq06cmYOafCtXbt5tFivLz+TGMB2hq95pvjNXlGvwch/dxGr99HGScAAFCMIA8AANZ0dAPhuflHfLiL79YH87+WXpvA4rw5iXnYy3pfj2f0tQnpAQAA2LZNkAcAAADY7K1i5NtYvn63619Daiy8/xzXF3Md8nqH9OYvAABAcYI8AAAA4JW38fRX6bNoNvvHaj0WxLd8MdfhulH3b/MXAACguI/RBwAAAMSd3RiqFIQAYz03a0IvVc9z1eNa1Yg5Z56zbcZAT57R11Fl/axwDAAAAHxDkAcAAAD8xEZvO1U2839T/fhWUGEcjP79jGcMwH7V5kuF+wgAAABvBHkAALCWq5sxNnOAd9aFvJnO6UzHOptK57bSsTCGMdCWZ/Q1VL4OlY8NAADgdj5HHwAAAADAjcy4Yf7ctu0x+iAWU3EcuM4YA/Cz1Lr92xxLhJvmMAAAQAGCPAAAgHnYYGMUG7y1nLkWNvnZw3Xur9X5rhh9wqyuzKcjc/z1z5rDtblXAgAAvxLkAQDAOlKbNjbjYawe888m7xi9NvT/9vfPHof7Q8aZ83/2vJ/5Xa7zGs7Oedc/zzP63Hqu2d/9jKO/3zgBAAAo4GP0AQAAAN3YmAG+PLbja4KI75qz5+/MtRrxM9nn6Di4eq0em+uN61+d67OWCvdsz2wAAACDCfIAAGANezdd9m7m2MSBexAB1Nb6+oz49C37tYg69nKd12O9H8Mz+tyOnO/W8bM5DAAAMBFBHgAAANybDd72Rn3urtXvEYSccyTMaXX9zXf2MMfheIzXg7AaAABgEoI8AAC4BxvwAPPovWa7R9yL631frn09rsn83LMBAAD4H0EeAADM7+jbD3wSC3hnXahj1Ea7Df4aKl0H831NlcbY6jyj04p5DAAAUJwgDwAA1mfDBmCcip+8S/x+QcjcRo81wDys7MgnxitzrwYAABhEkAcAbKlrxgAAEPpJREFUAHM7u8niDRwAtVTZ1K9yHAAz84y+PvdLAAAAfiTIAwCAtdkoAgCAWjyjc5UxBAAAUJggDwAAAKCNVT559xNvaMpzTgHG2rMOz3rfBgAAoJPP0QcAAACcdnXT/rHzZzw3m04Ad7L3/kAbve677u3Qhmd0AAAAuDlvyAMAgHXZoAOAOQkiYV2e0QEAAGBxgjwAALi3vRuCwgBg20QEcMXR+ePeC/flGR0AAAAm5pO1AAAwJ5tvAGsQOfKbr/u9cUKKZ8i2nN/1VVqPKx0LAAAAL7whDwAA1mRzBjhCQJA3+zl1H2nj7Hl9vvwPmJe1tTZrLAAAABGCPAAAmE96o8gnsQA4y72hP3EeZxkzbXlGBwAAALZt88laAABYkTdvrGv0hquxtabR4wru5rHl5t37z7FO85MjY844asN5hXVUeH62pgAAQGHekAcAAGybN3DAXQk0YIxW8+m5eYMe/2cszMszOgAAAEzIG/IAAGAuNtuABGsJjJd8U95PvEEP630fzjMAAADwL0EeAACsxUY7zK/ipr61Bdr4mlu95v3r7zGv13VlPBkXbTivAAAAcCOCPAAAmEfrzfq9b+p5bjYV4U7Md2ivd5j3+rvM8bEqRdjGwjme0QEAAIA/fIw+AAAAIMYGHJBmXYG+Hlv/effcakVhjGG9b8e5BQAAgJsR5AEAAK/2bhjauIf1CQhgnMfWP84T5kFdntEBAABgIj5ZCwAAc7C5xrYJpOjHWIM6Xudjj+cBn728H9f7PM/ocE/WTQAA4FeCPAAAWIMNASDFegJ1vc/PVjGQKO8eXOP2nGMAAAC4IZ+sBQCA+nq/ecMnseCeen8ekzUYM2M9tnaft3WfX5u5e51ndAAAAOBb3pAHAADzs6EKJHgjFsyv1xv0mJM1vi/nGwAAAG5KkAcAAHznsdnEh1FabOCbz/1ZR6ngdT05Mx6Fuu05vxzh3tLWnvNrXQQAAOCvBHkAAFDbng23kZtyNqRgDns38M3p/qqec8HHer7GmWsL13lGp4I9Y8w4AAAAGOBj9AEAAAAAAN0cjTMEfAAAAABwgCAPAADqmmUDfJbjhLvbG+GY07A+b0yC82a5T85ynAAAALAcn6wFAAAA4NXeiEPUdUy1Twvu/ZQ1AH/ySWAAAAB+5Q15AAAAcB/ekteX8011ghKAP1kXAQAAuEyQBwAANc0WZ8x2vAB8z3oO8LPZ1sjZjpf9XFsAAIDCBHkAAABwL97aVtNs59sbhAC4s9nu2wAAAHT0OfoAAACA/9m7udMzhthzTM9NoAHw7rHNs2k/y3ECjOAZnSoqjkUAAABeeEMeAADMyeYKcIW35NU08ny71gDXeUZfg+ckAAAALhHkAQAAALR1JNCYYXNfcNLODNcfgP/0XrfdJwAAACYgyAMAgFr2bLCMCCG8JQLWY17XZXP/3npeD9ce9vGMfj8VY/ojv0c8DwAAMJAgDwAAAKC9oxvjz639Bv+Z32GD/7xqcYdAByCnxz0bAACASQjyAACgjuqbLN7AAesxr+trce57xH5c1/Iauf6wX/X54l7eToWYXjwPAAAwoc/RBwAAABxic+Xeqm2kGo9wzGM7N49f/86VeXd1DTHnrzs6Br7+bOrcnxkDrjv8nXmyrjP37sTaffaebSz2Ue3/l22baw8AAKUI8gAAAODe9m40PzcbfQlno7wvP/3d92uT3ih27ce6EmVWjAYAZpII6r9+zt4/CwAAwMQEeQAAUMMsGzDCHYDrrkZ532l5H7GeZ7WKMltw7bk7z+gktR5Pri0AAEARH6MPAAAA2M0GC9DK3vVlljBhBrOs6bMc52xmOK8zHCNUYK7cQ+Xr/NhqHx8AAMDtCPIAAIBWhDsAv6u8eW5zvz3nFxjBM/p5Fe+N1Y4HAACATZAHAAAV7NkUq7TRUulYgBxvyRvD5v69VT3XVY8LevKMzk+qnOsqxwEAAMCbz9EHAAAAAMC/m+ojg0cb+2NUuPZfjAGAfUau3dZqAACA4rwhDwAAxqqw+X6GN2nBmszt8Ua8Ma/iW/ruaPR1MAbgP7Pe59zH++u5do++TwAAALCTN+QBAEB9Nl3uwXUGXr2uCS3CCWtOXa2v/W+/D9jP3OFVi7XbGBvL+QcAAE57PJ/+YzgAAACAyRz5Bx0byuu4+g95xgLAGD+t39ZlAACABQnyAAAAAGBu7//AJ/AAAAAAgEF8shYAAAAA5ibAAwAAAIAiPkYfAAAAAAAAAAAAAKxAkAcAAAAAAAAAAAABgjwAAAAAAAAAAAAIEOQBAAAAAAAAAABAgCAPAAAAAAAAAAAAAgR5AAAAAAAAAAAAECDIAwAAAAAAAAAAgABBHgAAAAAAAAAAAAQI8gAAAAAAAAAAACBAkAcAAAAAAAAAAAABgjwAAAAAAAAAAAAIEOQBAAAAAAAAAABAgCAPAAAAAAAAAAAAAgR5AAAAAAAAAAAAECDIAwAAAAAAAAAAgABBHgAAAAAAAAAAAAQI8gAAAAAAAAAAACBAkAcAAAAAAAAAAAABgjwAAAAAAAAAAAAIEOQBAAAAAAAAAABAgCAPAAAAAAAAAAAAAgR5AAAAAAAAAAAAECDIAwAAAAAAAAAAgABBHgAAAAAAAAAAAAQI8gAAAAAAAAAAACBAkAcAAAAAAAAAAAABgjwAAAAAAAAAAAAIEOQBAAAAAAAAAABAgCAPAAAAAAAAAAAAAgR5AAAAAAAAAAAAECDIAwAAAAAAAAAAgABBHgAAAAAAAAAAAAQI8gAAAAAAAAAAACBAkAcAAAAAAAAAAAABgjwAAAAAAAAAAAAIEOQBAAAAAAAAAABAgCAPAAAAAAAAAAAAAgR5AAAAAAAAAAAAECDIAwAAAAAAAAAAgABBHgAAAAAAAAAAAAQI8gAAAAAAAAAAACBAkAcAAAAAAAAAAAABgjwAAAAAAAAAAAAIEOQBAAAAAAAAAABAgCAPAAAAAAAAAAAAAgR5AAAAAAAAAAAAECDIAwAAAAAAAAAAgABBHgAAAAAAAAAAAAQI8gAAAAAAAAAAACBAkAcAAAAAAAAAAAABgjwAAAAAAAAAAAAIEOQBAAAAAAAAAABAgCAPAAAAAAAAAAAAAgR5AAAAAAAAAAAAECDIAwAAAAAAAAAAgABBHgAAAAAAAAAAAAQI8gAAAAAAAAAAACBAkAcAAAAAAAAAAAABgjwAAAAAAAAAAAAIEOQBAAAAAAAAAABAgCAPAAAAAAAAAAAAAgR5AAAAAAAAAAAAECDIAwAAAAAAAAAAgABBHgAAAAAAAAAAAAQI8gAAAAAAAAAAACBAkAcAAAAAAAAAAAABgjwAAAAAAAAAAAAIEOQBAAAAAAAAAABAgCAPAAAAAAAAAAAAAgR5AAAAAAAAAAAAECDIAwAAAAAAAAAAgABBHgAAAAAAAAAAAAQI8gAAAAAAAAAAACBAkAcAAAAAAAAAAAABgjwAAAAAAAAAAAAIEOQBAAAAAAAAAABAgCAPAAAAAAAAAAAAAgR5AAAAAAAAAAAAECDIAwAAAAAAAAAAgABBHgAAAAAAAAAAAAQI8gAAAAAAAAAAACBAkAcAAAAAAAAAAAABgjwAAAAAAAAAAAAIEOQBAAAAAAAAAABAgCAPAAAAAAAAAAAAAgR5AAAAAAAAAAAAECDIAwAAAAAAAAAAgABBHgAAAAAAAAAAAAQI8gAAAAAAAAAAACBAkAcAAAAAAAAAAAABgjwAAAAAAAAAAAAIEOQBAAAAAAAAAABAgCAPAAAAAAAAAAAAAgR5AAAAAAAAAAAAECDIAwAAAAAAAAAAgABBHgAAAAAAAAAAAAQI8gAAAAAAAAAAACBAkAcAAAAAAAAAAAABgjwAAAAAAAAAAAAIEOQBAAAAAAAAAABAgCAPAAAAAAAAAAAAAgR5AAAAAAAAAAAAECDIAwAAAAAAAAAAgABBHgAAAAAAAAAAAAQI8gAAAAAAAAAAACBAkAcAAAAAAAAAAAABgjwAAAAAAAAAAAAIEOQBAAAAAAAAAABAgCAPAAAAAAAAAAAAAgR5AAAAAAAAAAAAECDIAwAAAAAAAAAAgABBHgAAAAAAAAAAAAQI8gAAAAAAAAAAACBAkAcAAAAAAAAAAAABgjwAAAAAAAAAAAAIEOQBAAAAAAAAAABAgCAPAAAAAAAAAAAAAgR5AAAAAAAAAAAAECDIAwAAAAAAAAAAgABBHgAAAAAAAAAAAAQI8gAAAAAAAAAAACBAkAcAAAAAAAAAAAABgjwAAAAAAAAAAAAIEOQBAAAAAAAAAABAgCAPAAAAAAAAAAAAAgR5AAAAAAAAAAAAECDIAwAAAAAAAAAAgABBHgAAAAAAAAAAAAQI8gAAAAAAAAAAACBAkAcAAAAAAAAAAAABgjwAAAAAAAAAAAAIEOQBAAAAAAAAAABAgCAPAAAAAAAAAAAAAgR5AAAAAAAAAAAAECDIAwAAAAAAAAAAgABBHgAAAAAAAAAAAAQI8gAAAAAAAAAAACBAkAcAAAAAAAAAAAABgjwAAAAAAAAAAAAIEOQBAAAAAAAAAABAgCAPAAAAAAAAAAAAAgR5AAAAAAAAAAAAECDIAwAAAAAAAAAAgABBHgAAAAAAAAAAAAQI8gAAAAAAAAAAACBAkAcAAAAAAAAAAAABgjwAAAAAAAAAAAAIEOQBAAAAAAAAAABAgCAPAAAAAAAAAAAAAgR5AAAAAAAAAAAAECDIAwAAAAAAAAAAgABBHgAAAAAAAAAAAAQI8gAAAAAAAAAAACBAkAcAAAAAAAAAAAABgjwAAAAAAAAAAAAIEOQBAAAAAAAAAABAgCAPAAAAAAAAAAAAAgR5AAAAAAAAAAAAECDIAwAAAAAAAAAAgABBHgAAAAAAAAAAAAQI8gAAAAAAAAAAACBAkAcAAAAAAAAAAAABgjwAAAAAAAAAAAAIEOQBAAAAAAAAAABAgCAPAAAAAAAAAAAAAgR5AAAAAAAAAAAAECDIAwAAAAAAAAAAgABBHgAAAAAAAAAAAAQI8gAAAAAAAAAAACBAkAcAAAAAAAAAAAABgjwAAAAAAAAAAAAIEOQBAAAAAAAAAABAgCAPAAAAAAAAAAAAAgR5AAAAAAAAAAAAECDIAwAAAAAAAAAAgABBHgAAAAAAAAAAAAQI8gAAAAAAAAAAACBAkAcAAAAAAAAAAAABgjwAAAAAAAAAAAAIEOQBAAAAAAAAAABAgCAPAAAAAAAAAAAAAgR5AAAAAAAAAAAAECDIAwAAAAAAAAAAgABBHgAAAAAAAAAAAAQI8gAAAAAAAAAAACBAkAcAAAAAAAAAAAABgjwAAAAAAAAAAAAIEOQBAAAAAAAAAABAgCAPAAAAAAAAAAAAAgR5AAAAAAAAAAAAECDIAwAAAAAAAAAAgABBHgAAAAAAAAAAAAQI8gAAAAAAAAAAACBAkAcAAAAAAAAAAAABgjwAAAAAAAAAAAAIEOQBAAAAAAAAAABAgCAPAAAAAAAAAAAAAgR5AAAAAAAAAAAAECDIAwAAAAAAAAAAgABBHgAAAAAAAAAAAAQI8gAAAAAAAAAAACBAkAcAAAAAAAAAAAABgjwAAAAAAAAAAAAIEOQBAAAAAAAAAABAgCAPAAAAAAAAAAAAAgR5AAAAAAAAAAAAECDIAwAAAAAAAAAAgABBHgAAAAAAAAAAAAQI8gAAAAAAAAAAACBAkAcAAAAAAAAAAAABgjwAAAAAAAAAAAAIEOQBAAAAAAAAAABAgCAPAAAAAAAAAAAAAgR5AAAAAAAAAAAAECDIAwAAAAAAAAAAgABBHgAAAAAAAAAAAAT8A1nRWt8URflZAAAAAElFTkSuQmCC' width="800" height="357" alt="Qarbon" style="width:800px; height:357px; border:0; display:block; outline:none; text-decoration:none;"/>
 
-      submitBtn.disabled = true;
-      submitBtn.textContent = 'Sending…';
+                <span style='font-size:12.0pt;font-family:"Poppins", sans-serif;color:#94A3B8; font-weight: 500; letter-spacing: 1px;'>
+                    © Qarbon Aerospace
+                </span>
+            </td>
+           </tr>
+       </table>
 
-      // ---------------------------------------------------------------
-      // MODE SWITCH
-      //   'no-cors'  = fire-and-forget. Request reaches the flow, but the
-      //                response is OPAQUE: res.ok is ALWAYS false and
-      //                res.status is ALWAYS 0. You cannot detect failure.
-      //   'cors'     = real mode. Requires the flow's Response action to
-      //                return Access-Control-Allow-Origin matching this page.
-      // Verify with curl first (see runbook Phase 2), then flip to 'cors'.
-      // ---------------------------------------------------------------
-      const FETCH_MODE = 'no-cors';
+      </td>
+     </tr>
+    </table>
+   </td>
+  </tr>
+ </table>
+</body>
 
-      try {
-        const res = await fetch(ENDPOINT, {
-          method: 'POST',
-          mode: FETCH_MODE,
-          // text/plain keeps this a CORS "simple request" -> no preflight OPTIONS.
-          // Body is still JSON; the flow parses it with json(triggerBody()).
-          headers: { 'Content-Type': 'text/plain;charset=UTF-8' },
-          body: JSON.stringify(payload)
-        });
 
-        // In no-cors the response is opaque (res.type === 'opaque', status 0).
-        // Checking res.ok there would ALWAYS throw, so only check in cors mode.
-        if (FETCH_MODE !== 'no-cors' && !res.ok) {
-          throw new Error('Request failed with status ' + res.status);
-        }
 
-        form.style.display = 'none';
-        success.style.display = 'block';
-      } catch (err) {
-        console.error(err);
-        showError('Sorry \u2014 we could not send your message. Please email Contact.Us@QarbonAerospace.com or call 1-855-572-7266');
-        submitBtn.disabled = false;
-        submitBtn.textContent = originalBtnText;
-      }
-    });
-  </script>
+
+
+
+
   <!-- ======================================================== -->
   <!-- MULTIPLE WEIGHT FONT DEFINITIONS AT BOTTOM OF DOCUMENT   -->
   <!-- ======================================================== -->
@@ -410,5 +326,8 @@
 
 
 
-</body>
+
+
+
+
 </html>
